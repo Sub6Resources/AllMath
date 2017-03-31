@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/deg_rad_hint_color</item>
     </style>
     <style name="AppTheme.NoTitleBar" parent="AppTheme">
         <item name="windowNoTitle">true</item>

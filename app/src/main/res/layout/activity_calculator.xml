@@ -33,42 +33,46 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_above="@+id/textView4"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView3"
-                android:layout_margin="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="sans-serif-light"
                 android:text="00000"
                 android:textAlignment="textEnd"
                 android:textColor="@android:color/background_dark"
-                android:textSize="36sp" />
+                android:textSize="72sp" />
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="DEG"
                 android:textAllCaps="true"
-                android:textColor="@color/cardview_dark_background"
-                android:textSize="18sp"
-                android:id="@+id/textView3"></TextView>
+                android:textColor="@color/deg_rad_hint_color"
+                android:textSize="16sp"></TextView>
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView"
-                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="sans-serif-light"
                 android:text="Error Message"
                 android:textAlignment="textEnd"
-                android:textColor="@android:color/background_dark"
-                android:textSize="24sp" />
+                android:textColor="?android:attr/textColorHintInverse"
+                android:textSize="40sp" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 
@@ -92,51 +96,72 @@
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp">
 
-            <Button
-                android:id="@+id/seven_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            <FrameLayout
+                android:id="@+id/eight_button_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="7"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                android:background="@color/cardview_shadow_start_color">
 
-            <Button
-                android:id="@+id/eight_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="8"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                <Button
+                    android:id="@+id/eight_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:text="8"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
 
-            <Button
-                android:id="@+id/nine_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            <FrameLayout
+                android:id="@+id/seven_button_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="9"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                android:background="@color/cardview_shadow_start_color">
+
+                <Button
+                    android:id="@+id/seven_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:text="7"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/nine_button_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_shadow_start_color">
+
+                <Button
+                    android:id="@+id/nine_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:text="9"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
 
             <Button
                 android:id="@+id/divide_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
                 android:text="÷"
                 android:textColor="@color/cardview_light_background"
@@ -149,7 +174,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
                 android:text="del"
                 android:textColor="@color/cardview_light_background"
@@ -164,51 +189,72 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <Button
-                android:id="@+id/four_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            <FrameLayout
+                android:id="@+id/four_button_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="4"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                android:background="@color/cardview_shadow_start_color">
 
-            <Button
-                android:id="@+id/five_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="5"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                <Button
+                    android:id="@+id/four_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:text="4"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
 
-            <Button
-                android:id="@+id/six_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            <FrameLayout
+                android:id="@+id/five_button_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="6"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                android:background="@color/cardview_shadow_start_color">
+
+                <Button
+                    android:id="@+id/five_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:text="5"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/six_button_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_shadow_start_color">
+
+                <Button
+                    android:id="@+id/six_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:text="6"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
 
             <Button
                 android:id="@+id/times_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
                 android:text="×"
                 android:textColor="@color/cardview_light_background"
@@ -269,7 +315,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
                 android:text="-"
                 android:textColor="@color/cardview_light_background"
@@ -317,7 +363,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
                 android:text="+"
                 android:textColor="@color/cardview_light_background"
@@ -330,7 +376,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_dark_background"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
                 android:text="="
                 android:textColor="@color/cardview_light_background"
@@ -351,7 +397,8 @@
         android:layout_alignParentEnd="true"
         android:stretchColumns="*"
         android:shrinkColumns="*"
-        android:layout_below="@+id/toolbar">
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorAccent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -365,7 +412,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="INV"
                 android:textColor="@color/cardview_dark_background"
@@ -378,7 +425,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="RAD"
                 android:textColor="@color/cardview_dark_background"
@@ -391,7 +438,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="%"
                 android:textColor="@color/cardview_dark_background"
@@ -413,7 +460,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="sin"
                 android:textAllCaps="false"
@@ -427,7 +474,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="cos"
                 android:textAllCaps="false"
@@ -441,7 +488,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="tan"
                 android:textAllCaps="false"
@@ -464,7 +511,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="ln"
                 android:textAllCaps="false"
@@ -478,7 +525,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="log"
                 android:textAllCaps="false"
@@ -492,7 +539,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="!"
                 android:textAllCaps="false"
@@ -515,7 +562,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="π"
                 android:textAllCaps="false"
@@ -529,7 +576,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="e"
                 android:textAllCaps="false"
@@ -543,7 +590,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="^"
                 android:textAllCaps="false"
@@ -566,7 +613,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="("
                 android:textAllCaps="false"
@@ -580,7 +627,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text=")"
                 android:textAllCaps="false"
@@ -594,7 +641,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorAccent"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
                 android:text="√"
                 android:textAllCaps="false"

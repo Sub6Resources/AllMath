@@ -3,4 +3,5 @@
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#1de9b6</color>
+    <color name="deg_rad_hint_color">#616161</color>
 </resources>
