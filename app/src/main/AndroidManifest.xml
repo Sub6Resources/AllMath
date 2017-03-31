@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CalculatorActivity"></activity>
+        <activity android:name=".CalculatorActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoTitleBar"></activity>
     </application>
 
 </manifest>

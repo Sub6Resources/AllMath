@@ -7,8 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="NoTitleBare" parent="AppTheme">
+    <style name="AppTheme.NoTitleBar" parent="AppTheme">
         <item name="windowNoTitle">true</item>
+        <item name="actionBarSize">0dp</item>
     </style>
 
 </resources>
