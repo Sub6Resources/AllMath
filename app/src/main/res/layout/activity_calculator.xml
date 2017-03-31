@@ -30,13 +30,45 @@
             android:elevation="?attr/actionBarSize">
 
             <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:layout_margin="8dp"
+                android:text="00000"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="36sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="DEG"
                 android:textAllCaps="true"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="18sp"></TextView>
+                android:textSize="18sp"
+                android:id="@+id/textView3"></TextView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginEnd="10dp"
+                android:text="Error Message"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 
@@ -61,54 +93,54 @@
             tools:layout_editor_absoluteY="8dp">
 
             <Button
-                android:id="@+id/one_button"
+                android:id="@+id/seven_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_shadow_start_color"
                 android:fontFamily="sans-serif-light"
-                android:text="1"
+                android:text="7"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
             <Button
-                android:id="@+id/two_button"
+                android:id="@+id/eight_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_shadow_start_color"
                 android:fontFamily="sans-serif-light"
-                android:text="2"
+                android:text="8"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
             <Button
-                android:id="@+id/three_button"
+                android:id="@+id/nine_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_shadow_start_color"
                 android:fontFamily="sans-serif-light"
-                android:text="3"
+                android:text="9"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
             <Button
-                android:id="@+id/add_button"
+                android:id="@+id/divide_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_dark_background"
                 android:fontFamily="sans-serif-light"
-                android:text="+"
+                android:text="÷"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -118,9 +150,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_dark_background"
+                android:fontFamily="sans-serif-light"
                 android:text="del"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -171,15 +204,15 @@
                 tools:layout_editor_absoluteY="142dp" />
 
             <Button
-                android:id="@+id/divide_button"
+                android:id="@+id/times_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_dark_background"
                 android:fontFamily="sans-serif-light"
-                android:text="÷"
+                android:text="×"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -193,54 +226,54 @@
             tools:layout_editor_absoluteY="8dp">
 
             <Button
-                android:id="@+id/seven_button"
+                android:id="@+id/one_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_shadow_start_color"
                 android:fontFamily="sans-serif-light"
-                android:text="7"
+                android:text="1"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
             <Button
-                android:id="@+id/eight_button"
+                android:id="@+id/two_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_shadow_start_color"
                 android:fontFamily="sans-serif-light"
-                android:text="8"
+                android:text="2"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
             <Button
-                android:id="@+id/nine_button"
+                android:id="@+id/three_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_shadow_start_color"
                 android:fontFamily="sans-serif-light"
-                android:text="9"
+                android:text="3"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
             <Button
-                android:id="@+id/times_button"
+                android:id="@+id/sub_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_dark_background"
                 android:fontFamily="sans-serif-light"
-                android:text="×"
+                android:text="-"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -280,15 +313,15 @@
                 tools:layout_editor_absoluteY="142dp" />
 
             <Button
-                android:id="@+id/sub_button"
+                android:id="@+id/add_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_dark_background"
                 android:fontFamily="sans-serif-light"
-                android:text="-"
+                android:text="+"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -301,7 +334,7 @@
                 android:fontFamily="sans-serif-light"
                 android:text="="
                 android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -333,10 +366,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="INV"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -346,10 +379,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="RAD"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -359,10 +392,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="%"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -381,11 +414,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="sin"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -395,11 +428,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="cos"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -409,11 +442,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="tan"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -432,11 +465,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="ln"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -446,11 +479,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="log"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -460,11 +493,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="!"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -483,11 +516,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="π"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -497,11 +530,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="e"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -511,11 +544,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="^"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -534,11 +567,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="("
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -548,11 +581,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text=")"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
@@ -562,11 +595,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorAccent"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="sans-serif-thin"
                 android:text="√"
                 android:textAllCaps="false"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
 
