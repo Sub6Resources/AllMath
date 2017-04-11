@@ -30,10 +30,10 @@
             android:elevation="?attr/actionBarSize">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/outputText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/textView4"
+                android:layout_above="@+id/errorText"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
@@ -41,7 +41,7 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="4dp"
                 android:fontFamily="sans-serif-light"
-                android:text="00000"
+                android:text="0"
                 android:textAlignment="textEnd"
                 android:textColor="@android:color/background_dark"
                 android:textSize="72sp" />
@@ -59,7 +59,7 @@
                 android:textSize="16sp"></TextView>
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/errorText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -97,26 +97,6 @@
             tools:layout_editor_absoluteY="8dp">
 
             <FrameLayout
-                android:id="@+id/eight_button_container"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color">
-
-                <Button
-                    android:id="@+id/eight_button"
-                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:fontFamily="sans-serif-light"
-                    android:text="8"
-                    android:textColor="@color/cardview_light_background"
-                    android:textSize="36sp"
-                    tools:layout_editor_absoluteX="91dp"
-                    tools:layout_editor_absoluteY="142dp" />
-            </FrameLayout>
-
-            <FrameLayout
                 android:id="@+id/seven_button_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -129,7 +109,29 @@
                     android:layout_height="match_parent"
                     android:background="?android:attr/selectableItemBackground"
                     android:fontFamily="sans-serif-light"
+                    android:onClick="clickSeven"
                     android:text="7"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/eight_button_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_shadow_start_color">
+
+                <Button
+                    android:id="@+id/eight_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="clickEight"
+                    android:text="8"
                     android:textColor="@color/cardview_light_background"
                     android:textSize="36sp"
                     tools:layout_editor_absoluteX="91dp"
@@ -149,6 +151,7 @@
                     android:layout_height="match_parent"
                     android:background="?android:attr/selectableItemBackground"
                     android:fontFamily="sans-serif-light"
+                    android:onClick="clickNine"
                     android:text="9"
                     android:textColor="@color/cardview_light_background"
                     android:textSize="36sp"
@@ -202,6 +205,7 @@
                     android:layout_height="match_parent"
                     android:background="?android:attr/selectableItemBackground"
                     android:fontFamily="sans-serif-light"
+                    android:onClick="clickFour"
                     android:text="4"
                     android:textColor="@color/cardview_light_background"
                     android:textSize="36sp"
@@ -222,6 +226,7 @@
                     android:layout_height="match_parent"
                     android:background="?android:attr/selectableItemBackground"
                     android:fontFamily="sans-serif-light"
+                    android:onClick="clickFive"
                     android:text="5"
                     android:textColor="@color/cardview_light_background"
                     android:textSize="36sp"
@@ -242,6 +247,7 @@
                     android:layout_height="match_parent"
                     android:background="?android:attr/selectableItemBackground"
                     android:fontFamily="sans-serif-light"
+                    android:onClick="clickSix"
                     android:text="6"
                     android:textColor="@color/cardview_light_background"
                     android:textSize="36sp"
@@ -271,44 +277,68 @@
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp">
 
-            <Button
-                android:id="@+id/one_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            <FrameLayout
+                android:id="@+id/one_button_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="1"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                android:background="@color/cardview_shadow_start_color">
 
-            <Button
-                android:id="@+id/two_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="2"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                <Button
+                    android:id="@+id/one_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="clickOne"
+                    android:text="1"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
 
-            <Button
-                android:id="@+id/three_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            <FrameLayout
+                android:id="@+id/two_button_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="3"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                android:background="@color/cardview_shadow_start_color">
+
+                <Button
+                    android:id="@+id/two_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="clickTwo"
+                    android:text="2"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/three_button_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_shadow_start_color">
+
+                <Button
+                    android:id="@+id/three_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="clickThree"
+                    android:text="3"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
 
             <Button
                 android:id="@+id/sub_button"
@@ -330,26 +360,39 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <Button
-                android:id="@+id/zero_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            <FrameLayout
+                android:id="@+id/zero_button_container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_span="2"
-                android:background="@color/cardview_shadow_start_color"
-                android:fontFamily="sans-serif-light"
-                android:text="0"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+                android:background="@color/cardview_shadow_start_color">
 
+                <Button
+                    android:id="@+id/zero_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="clickZero"
+                    android:text="0"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/dot_button_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_shadow_start_color">
             <Button
                 android:id="@+id/dot_button"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/cardview_shadow_start_color"
+                android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
                 android:text="."
                 android:textColor="@color/cardview_light_background"
@@ -357,6 +400,7 @@
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="142dp" />
+            </FrameLayout>
 
             <Button
                 android:id="@+id/add_button"
