@@ -43,6 +43,7 @@
                 android:fontFamily="sans-serif-light"
                 android:text="0"
                 android:textAlignment="textEnd"
+                android:maxLines="1"
                 android:textColor="@android:color/background_dark"
                 android:textSize="72sp" />
 
@@ -166,6 +167,7 @@
                 android:layout_height="match_parent"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
+                android:onClick="clickDivide"
                 android:text="÷"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="30sp"
@@ -179,6 +181,7 @@
                 android:layout_height="match_parent"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
+                android:onClick="clickDel"
                 android:text="del"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="18sp"
@@ -262,6 +265,7 @@
                 android:layout_height="match_parent"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
+                android:onClick="clickMultiply"
                 android:text="×"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="30sp"
@@ -347,6 +351,7 @@
                 android:layout_height="match_parent"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
+                android:onClick="clickSubtract"
                 android:text="-"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="30sp"
@@ -387,19 +392,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/cardview_shadow_start_color">
-            <Button
-                android:id="@+id/dot_button"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="?android:attr/selectableItemBackground"
-                android:fontFamily="sans-serif-light"
-                android:text="."
-                android:textColor="@color/cardview_light_background"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="91dp"
-                tools:layout_editor_absoluteY="142dp" />
+
+                <Button
+                    android:id="@+id/dot_button"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="clickPeriod"
+                    android:text="."
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="91dp"
+                    tools:layout_editor_absoluteY="142dp" />
             </FrameLayout>
 
             <Button
@@ -409,6 +416,7 @@
                 android:layout_height="match_parent"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
+                android:onClick="clickAdd"
                 android:text="+"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="30sp"
