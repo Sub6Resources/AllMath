@@ -127,7 +127,7 @@ public class CalculatorActivity extends AppCompatActivity {
             //TODO we need a more complicated check for a period, since you can only have one per number.
             int periodCount = equationString.length() - equationString.replace(".", "").length();
             int operatorCount = equationString.length() - equationString.replace("+","").replace("-","").replace("×", "").replace("÷","").length();
-            if(periodCount < operatorCount+1 && !doesntEndWithNumber(equationString)) {
+            if(periodCount < operatorCount+1) {
                 if (doesntEndWithNumber(equationString)) {
                     del();
                     equationString += ".";
