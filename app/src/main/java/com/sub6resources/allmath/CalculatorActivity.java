@@ -176,6 +176,6 @@ public class CalculatorActivity extends AppCompatActivity {
         }
     public void parseEquation() {
         //Parse output in new class
-        answer.setText(EquationParser.Parse(equationString));
+        answer.setText(EquationParser.Parse(equationString).getAnswer());
     }
 }

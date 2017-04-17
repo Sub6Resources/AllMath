@@ -430,6 +430,7 @@
                 android:layout_height="match_parent"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-light"
+                android:onClick="clickEquals"
                 android:text="="
                 android:textColor="@color/cardview_light_background"
                 android:textSize="30sp"
