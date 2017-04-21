@@ -70,10 +70,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="32dp"
                 android:fontFamily="sans-serif-light"
-                android:text="Error Message"
                 android:textAlignment="textEnd"
                 android:textColor="?android:attr/textColorHintInverse"
-                android:textSize="40sp" />
+                android:textSize="40sp"
+                tools:text="Error Message" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 
