@@ -6,6 +6,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
 
+import com.sub6resources.allmath.math.Answer;
 import com.sub6resources.allmath.math.EquationParser;
 
 public class CalculatorActivity extends AppCompatActivity {
@@ -14,6 +15,14 @@ public class CalculatorActivity extends AppCompatActivity {
     public String MINUS = "-";
     public String TIMES = "×";
     public String DIVIDE = "÷";
+    public String PERCENT = "%";
+    public String SIN = "sin(";
+    public String COS = "cos(";
+    public String TAN = "tan(";
+    public String LN = "ln(";
+    public String LOG = "log(";
+    public String EXCLAMATION = "!";
+    public String PI = "π";
 
 
     TextView output;
@@ -79,6 +88,35 @@ public class CalculatorActivity extends AppCompatActivity {
     public void clickEquals(View view) {
         parseEquation();
     }
+    public void clickPercent(View view) {
+        addSymbolToEquation("%");
+    }
+    public void clickSin(View view) {
+        addSymbolToEquation("sin(");
+    }
+    public void clickCos(View view) {
+        addSymbolToEquation("cos(");
+    }
+    public void clickTan(View view) {
+        addSymbolToEquation("tan(");
+    }
+    public void clickLn(View view) {
+        addSymbolToEquation("ln(");
+    }
+    public void clickLog(View view) {
+        addSymbolToEquation("log(");
+    }
+    public void clickExclamation(View view) {
+        addSymbolToEquation("!");
+    }
+    public void clickPi(View view) {
+        addNumberToEquation("π");
+    }
+    public void clickE(View view) { addNumberToEquation("e");}
+    public void clickUpCaret(View view) {addSymbolToEquation("^");}
+    public void clickLeftParenthesis(View view) {addSymbolToEquation("(");}
+    public void clickRightParenthesis(View view) {addSymbolToEquation(")");}
+    public void clickSqrt(View view) {addSymbolToEquation("sqrt(");}
 
     public void addNumberToEquation(String number) {
         if(equationString.equals("0")) {
@@ -99,7 +137,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 equationString += PLUS;
             }
         }
-        if(symbol.equals(MINUS)) {
+        else if(symbol.equals(MINUS)) {
             if (doesntEndWithNumber(equationString)) {
                 del();
                 equationString += MINUS;
@@ -107,7 +145,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 equationString += MINUS;
             }
         }
-        if(symbol.equals(DIVIDE)) {
+        else if(symbol.equals(DIVIDE)) {
             if (doesntEndWithNumber(equationString)) {
                 del();
                 equationString += DIVIDE;
@@ -115,7 +153,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 equationString += DIVIDE;
             }
         }
-        if(symbol.equals(TIMES)) {
+        else if(symbol.equals(TIMES)) {
             if (doesntEndWithNumber(equationString)) {
                 del();
                 equationString += TIMES;
@@ -123,17 +161,36 @@ public class CalculatorActivity extends AppCompatActivity {
                 equationString += TIMES;
             }
         }
-        if(symbol.equals(".")) {
-            //TODO we need a more complicated check for a period, since you can only have one per number.
+        else if(symbol.equals(".")) {
             int periodCount = equationString.length() - equationString.replace(".", "").length();
             int operatorCount = equationString.length() - equationString.replace("+","").replace("-","").replace("×", "").replace("÷","").length();
             if(periodCount < operatorCount+1) {
-                if (doesntEndWithNumber(equationString)) {
+                if (doesntEndWithNumber(equationString) && periodCount < operatorCount) {
                     del();
                     equationString += ".";
-                } else {
+                } else if(doesntEndWithNumber(equationString)) {
+                    equationString += "0."; //Start a new number
+                }
+                else {
                     equationString += ".";
                 }
+            }
+        }
+        else if(symbol.equals(PERCENT)) {
+            if(doesntEndWithNumber(equationString)) {
+                del();
+                equationString += symbol;
+            } else {
+                equationString += symbol;
+            }
+        }
+        else {
+            //TODO add handlers for specific symbols
+            if(doesntEndWithNumber(equationString)) {
+                del();
+                equationString += symbol;
+            } else {
+                equationString += symbol;
             }
         }
         updateOutput();
@@ -172,6 +229,9 @@ public class CalculatorActivity extends AppCompatActivity {
                 &&!equation.endsWith("9")
                 &&!equation.endsWith("0")
                 &&!equation.endsWith(")")
+                &&!equation.endsWith("π")
+                &&!equation.endsWith("e")
+                &&!equation.endsWith("!")
                 ) {
             return true;
         } else {
@@ -180,6 +240,11 @@ public class CalculatorActivity extends AppCompatActivity {
         }
     public void parseEquation() {
         //Parse output in new class
-        answer.setText(EquationParser.Parse(equationString).getAnswer());
+        Answer returnedAnswer = new Answer("");
+        returnedAnswer = EquationParser.Parse(equationString);
+        answer.setText(returnedAnswer.getAnswer());
+        if(returnedAnswer.getError() != null) {
+            answer.setText("ERROR: "+returnedAnswer.getErrorString());
+        }
     }
 }

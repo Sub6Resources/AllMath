@@ -6,13 +6,12 @@ package com.sub6resources.allmath.math;
 
 public class Answer {
     private String answer;
-    private Errors error;
-    public enum Errors {Success, NoCode};
+    private Expression.ExpressionException error;
     public Answer(String _answer) {
         answer = _answer;
-        error = Errors.Success;
+        error = null;
     }
-    public Answer(String errorMessage, Errors _error) {
+    public Answer(String errorMessage, Expression.ExpressionException _error) {
         answer = errorMessage;
         error = _error;
     }
@@ -22,9 +21,10 @@ public class Answer {
     public String getAnswer() {
         return this.answer;
     }
-    public Errors getError() {
+    public Expression.ExpressionException getError() {
         return this.error;
     }
+    public String getErrorString() {return this.error.getLocalizedMessage();}
     public String toString() {
         return answer+","+error.toString();
     }

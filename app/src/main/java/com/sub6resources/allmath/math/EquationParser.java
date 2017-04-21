@@ -11,14 +11,21 @@ public final class EquationParser {
         //Prepare string
         equation = equation.replaceAll("×", "*");
         equation = equation.replaceAll("÷", "/");
+        equation = equation.replaceAll("π", "PI");
         /*public String PLUS = "+";
         public String MINUS = "-";
         public String TIMES = "×";
         public String DIVIDE = "÷";*/
         BigDecimal result = null;
-        Expression expression = new Expression(equation);
+        Expression expression = new Expression(equation).setPrecision(128);
 
-        result = expression.eval();
+        try {
+            result = expression.eval();
+        } catch(Expression.ExpressionException e) {
+            return new Answer("",e);
+        } catch(ArithmeticException e) {
+            return new Answer("", new Expression.ExpressionException(e.getMessage()));
+        }
         return new Answer(result.toString());
     }
 }

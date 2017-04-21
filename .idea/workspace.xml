@@ -18,6 +18,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9862a067-89f5-4e72-aef0-93932c603f3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/CalculatorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/CalculatorActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Answer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Answer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/EquationParser.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/EquationParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
     </list>
     <ignored path="AllMath.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,35 +55,32 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculatorActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CalculatorActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/CalculatorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="148" column="20" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
-              <folding>
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#892#893#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="327">
+              <caret line="243" column="62" selection-start-line="243" selection-start-column="62" selection-end-line="243" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EquationParser.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EquationParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/EquationParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="378">
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -98,17 +99,11 @@
       <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Answer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="153">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding>
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,14 +111,14 @@
       </file>
       <file leaf-file-name="activity_calculator.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="781">
+            <state relative-caret-position="1173">
               <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
               <folding />
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
           </provider>
         </entry>
       </file>
@@ -160,81 +155,11 @@
       <file leaf-file-name="Expression.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Expression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="370" column="115" selection-start-line="370" selection-start-column="115" selection-end-line="370" selection-end-column="115" />
+            <state relative-caret-position="258">
+              <caret line="452" column="9" selection-start-line="452" selection-start-column="9" selection-end-line="452" selection-end-column="9" />
               <folding>
                 <element signature="e#0#54823#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#11893#11911#0" expanded="true" />
-                <element signature="e#12080#12102#0" expanded="true" />
-                <element signature="e#12261#12281#0" expanded="true" />
-                <element signature="e#12759#12853#0" expanded="true" />
-                <element signature="e#12852#12853#0" expanded="true" />
-                <element signature="e#13120#13121#0" expanded="true" />
-                <element signature="e#13158#13159#0" expanded="true" />
-                <element signature="e#14170#14171#0" expanded="true" />
-                <element signature="e#14205#14206#0" expanded="true" />
-                <element signature="e#14242#14243#0" expanded="true" />
-                <element signature="e#14282#14283#0" expanded="true" />
-                <element signature="e#14326#14327#0" expanded="true" />
-                <element signature="e#14370#14371#0" expanded="true" />
-                <element signature="e#14759#14760#0" expanded="true" />
-                <element signature="e#14805#14806#0" expanded="true" />
-                <element signature="e#14931#14943#0" expanded="true" />
-                <element signature="e#15080#15228#0" expanded="true" />
-                <element signature="e#15227#15228#0" expanded="true" />
-                <element signature="e#16786#16787#0" expanded="true" />
-                <element signature="e#16821#16822#0" expanded="true" />
-                <element signature="e#16859#16860#0" expanded="true" />
-                <element signature="e#16900#16901#0" expanded="true" />
-                <element signature="e#16940#16941#0" expanded="true" />
-                <element signature="e#16980#16981#0" expanded="true" />
-                <element signature="e#18032#18033#0" expanded="true" />
-                <element signature="e#18081#18082#0" expanded="true" />
-                <element signature="e#18135#18136#0" expanded="true" />
-                <element signature="e#18188#18189#0" expanded="true" />
-                <element signature="e#21537#21538#0" expanded="true" />
-                <element signature="e#21616#21617#0" expanded="true" />
-                <element signature="e#21792#21793#0" expanded="true" />
-                <element signature="e#21826#21827#0" expanded="true" />
-                <element signature="e#22198#22199#0" expanded="true" />
-                <element signature="e#22253#22254#0" expanded="true" />
-                <element signature="e#22972#22973#0" expanded="true" />
-                <element signature="e#23025#23026#0" expanded="true" />
-                <element signature="e#23176#23177#0" expanded="true" />
-                <element signature="e#23234#23235#0" expanded="true" />
-                <element signature="e#23385#23386#0" expanded="true" />
-                <element signature="e#23443#23444#0" expanded="true" />
-                <element signature="e#23594#23595#0" expanded="true" />
-                <element signature="e#23650#23651#0" expanded="true" />
-                <element signature="e#23801#23802#0" expanded="true" />
-                <element signature="e#23860#23861#0" expanded="true" />
-                <element signature="e#37220#37228#0" expanded="true" />
-                <element signature="e#37271#37279#0" expanded="true" />
-                <element signature="e#41847#41859#0" expanded="true" />
-                <element signature="e#42096#42281#0" expanded="true" />
-                <element signature="e#42280#42281#0" expanded="true" />
-                <element signature="e#42401#42569#0" expanded="true" />
-                <element signature="e#42568#42569#0" expanded="true" />
-                <element signature="e#42787#42799#0" expanded="true" />
-                <element signature="e#43457#43620#0" expanded="true" />
-                <element signature="e#43619#43620#0" expanded="true" />
-                <element signature="e#47937#47938#0" expanded="true" />
-                <element signature="e#47988#47989#0" expanded="true" />
-                <element signature="e#48622#48623#0" expanded="true" />
-                <element signature="e#48673#48674#0" expanded="true" />
-                <element signature="e#48915#48916#0" expanded="true" />
-                <element signature="e#48968#48969#0" expanded="true" />
-                <element signature="e#50027#50036#0" expanded="true" />
-                <element signature="e#53085#53086#0" expanded="true" />
-                <element signature="e#53118#53119#0" expanded="true" />
-                <element signature="e#53354#53362#0" expanded="true" />
-                <element signature="e#54114#54115#0" expanded="true" />
-                <element signature="e#54160#54161#0" expanded="true" />
-                <element signature="e#54629#54630#0" expanded="true" />
-                <element signature="e#54708#54709#0" expanded="true" />
-                <element signature="e#54780#54781#0" expanded="true" />
-                <element signature="e#54818#54819#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2097,12 +2022,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/RealNumber.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/ComplexNumber.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Fraction.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Answer.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/Expression.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/EquationParser.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/CalculatorActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Answer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/EquationParser.java" />
       </list>
     </option>
   </component>
@@ -2137,6 +2062,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
@@ -2216,9 +2144,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2226,6 +2151,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="5915ee401fa58b28" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_t350-5915ee401fa58b28" />
+    <property name="DEBUGGABLE_PROCESS" value="com.sub6resources.allmath" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="DEBUGGER_ID" value="Auto" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -2564,8 +2493,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2577,7 +2505,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2589,6 +2517,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2605,7 +2534,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2649,10 +2578,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2730,10 +2656,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2795,10 +2718,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2860,10 +2780,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2958,10 +2875,45 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/RealNumber.java" />
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/ComplexNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Fraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="452" column="9" selection-start-line="452" selection-start-column="9" selection-end-line="452" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#54823#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2977,139 +2929,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="370" column="115" selection-start-line="370" selection-start-column="115" selection-end-line="370" selection-end-column="115" />
-          <folding>
-            <element signature="e#0#54823#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#11893#11911#0" expanded="true" />
-            <element signature="e#12080#12102#0" expanded="true" />
-            <element signature="e#12261#12281#0" expanded="true" />
-            <element signature="e#12759#12853#0" expanded="true" />
-            <element signature="e#12852#12853#0" expanded="true" />
-            <element signature="e#13120#13121#0" expanded="true" />
-            <element signature="e#13158#13159#0" expanded="true" />
-            <element signature="e#14170#14171#0" expanded="true" />
-            <element signature="e#14205#14206#0" expanded="true" />
-            <element signature="e#14242#14243#0" expanded="true" />
-            <element signature="e#14282#14283#0" expanded="true" />
-            <element signature="e#14326#14327#0" expanded="true" />
-            <element signature="e#14370#14371#0" expanded="true" />
-            <element signature="e#14759#14760#0" expanded="true" />
-            <element signature="e#14805#14806#0" expanded="true" />
-            <element signature="e#14931#14943#0" expanded="true" />
-            <element signature="e#15080#15228#0" expanded="true" />
-            <element signature="e#15227#15228#0" expanded="true" />
-            <element signature="e#16786#16787#0" expanded="true" />
-            <element signature="e#16821#16822#0" expanded="true" />
-            <element signature="e#16859#16860#0" expanded="true" />
-            <element signature="e#16900#16901#0" expanded="true" />
-            <element signature="e#16940#16941#0" expanded="true" />
-            <element signature="e#16980#16981#0" expanded="true" />
-            <element signature="e#18032#18033#0" expanded="true" />
-            <element signature="e#18081#18082#0" expanded="true" />
-            <element signature="e#18135#18136#0" expanded="true" />
-            <element signature="e#18188#18189#0" expanded="true" />
-            <element signature="e#21537#21538#0" expanded="true" />
-            <element signature="e#21616#21617#0" expanded="true" />
-            <element signature="e#21792#21793#0" expanded="true" />
-            <element signature="e#21826#21827#0" expanded="true" />
-            <element signature="e#22198#22199#0" expanded="true" />
-            <element signature="e#22253#22254#0" expanded="true" />
-            <element signature="e#22972#22973#0" expanded="true" />
-            <element signature="e#23025#23026#0" expanded="true" />
-            <element signature="e#23176#23177#0" expanded="true" />
-            <element signature="e#23234#23235#0" expanded="true" />
-            <element signature="e#23385#23386#0" expanded="true" />
-            <element signature="e#23443#23444#0" expanded="true" />
-            <element signature="e#23594#23595#0" expanded="true" />
-            <element signature="e#23650#23651#0" expanded="true" />
-            <element signature="e#23801#23802#0" expanded="true" />
-            <element signature="e#23860#23861#0" expanded="true" />
-            <element signature="e#37220#37228#0" expanded="true" />
-            <element signature="e#37271#37279#0" expanded="true" />
-            <element signature="e#41847#41859#0" expanded="true" />
-            <element signature="e#42096#42281#0" expanded="true" />
-            <element signature="e#42280#42281#0" expanded="true" />
-            <element signature="e#42401#42569#0" expanded="true" />
-            <element signature="e#42568#42569#0" expanded="true" />
-            <element signature="e#42787#42799#0" expanded="true" />
-            <element signature="e#43457#43620#0" expanded="true" />
-            <element signature="e#43619#43620#0" expanded="true" />
-            <element signature="e#47937#47938#0" expanded="true" />
-            <element signature="e#47988#47989#0" expanded="true" />
-            <element signature="e#48622#48623#0" expanded="true" />
-            <element signature="e#48673#48674#0" expanded="true" />
-            <element signature="e#48915#48916#0" expanded="true" />
-            <element signature="e#48968#48969#0" expanded="true" />
-            <element signature="e#50027#50036#0" expanded="true" />
-            <element signature="e#53085#53086#0" expanded="true" />
-            <element signature="e#53118#53119#0" expanded="true" />
-            <element signature="e#53354#53362#0" expanded="true" />
-            <element signature="e#54114#54115#0" expanded="true" />
-            <element signature="e#54160#54161#0" expanded="true" />
-            <element signature="e#54629#54630#0" expanded="true" />
-            <element signature="e#54708#54709#0" expanded="true" />
-            <element signature="e#54780#54781#0" expanded="true" />
-            <element signature="e#54818#54819#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Fraction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/EquationParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calculator.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="781">
+        <state relative-caret-position="1173">
           <caret line="69" column="52" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
           <folding />
         </state>
@@ -3120,12 +2942,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/CalculatorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="148" column="20" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
+        <state relative-caret-position="327">
+          <caret line="243" column="62" selection-start-line="243" selection-start-column="62" selection-end-line="243" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sub6resources/allmath/math/EquationParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
