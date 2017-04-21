@@ -467,6 +467,7 @@
                 android:layout_height="match_parent"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-thin"
+                android:onClick="clickInv"
                 android:text="INV"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="20sp"

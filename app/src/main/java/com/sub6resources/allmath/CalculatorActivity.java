@@ -4,25 +4,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.sub6resources.allmath.math.Answer;
 import com.sub6resources.allmath.math.EquationParser;
+import com.sub6resources.allmath.math.Symbols;
+
+import static com.sub6resources.allmath.math.Symbols.DIVIDE;
+import static com.sub6resources.allmath.math.Symbols.MINUS;
+import static com.sub6resources.allmath.math.Symbols.PERCENT;
+import static com.sub6resources.allmath.math.Symbols.PLUS;
+import static com.sub6resources.allmath.math.Symbols.SQUAREROOT;
+import static com.sub6resources.allmath.math.Symbols.SUPER_TWO;
+import static com.sub6resources.allmath.math.Symbols.SUPER_X;
+import static com.sub6resources.allmath.math.Symbols.TIMES;
 
 public class CalculatorActivity extends AppCompatActivity {
 
-    public String PLUS = "+";
-    public String MINUS = "-";
-    public String TIMES = "×";
-    public String DIVIDE = "÷";
-    public String PERCENT = "%";
-    public String SIN = "sin(";
-    public String COS = "cos(";
-    public String TAN = "tan(";
-    public String LN = "ln(";
-    public String LOG = "log(";
-    public String EXCLAMATION = "!";
-    public String PI = "π";
+
+
+    public boolean inv = false;
 
 
     TextView output;
@@ -92,19 +94,39 @@ public class CalculatorActivity extends AppCompatActivity {
         addSymbolToEquation("%");
     }
     public void clickSin(View view) {
-        addSymbolToEquation("sin(");
+        if(!inv) {
+            addSymbolToEquation("sin(");
+        } else {
+            addSymbolToEquation("asin(");
+        }
     }
     public void clickCos(View view) {
-        addSymbolToEquation("cos(");
+        if(!inv) {
+            addSymbolToEquation("cos(");
+        } else {
+            addSymbolToEquation("acos(");
+        }
     }
     public void clickTan(View view) {
-        addSymbolToEquation("tan(");
+        if(!inv) {
+            addSymbolToEquation("tan(");
+        } else {
+            addSymbolToEquation("atan(");
+        }
     }
     public void clickLn(View view) {
-        addSymbolToEquation("ln(");
+        if(!inv) {
+            addSymbolToEquation("ln(");
+        } else {
+            addSymbolToEquation("exp(");
+        }
     }
     public void clickLog(View view) {
-        addSymbolToEquation("log(");
+        if(!inv) {
+            addSymbolToEquation("log(");
+        } else {
+            addSymbolToEquation("10^");
+        }
     }
     public void clickExclamation(View view) {
         addSymbolToEquation("!");
@@ -116,7 +138,37 @@ public class CalculatorActivity extends AppCompatActivity {
     public void clickUpCaret(View view) {addSymbolToEquation("^");}
     public void clickLeftParenthesis(View view) {addSymbolToEquation("(");}
     public void clickRightParenthesis(View view) {addSymbolToEquation(")");}
-    public void clickSqrt(View view) {addSymbolToEquation("sqrt(");}
+    public void clickSqrt(View view) {
+        if(!inv) {
+            addSymbolToEquation("sqrt(");
+        } else {
+            addSymbolToEquation(""+SUPER_TWO);
+        }
+    }
+    public void clickInv(View view) {
+        inv = !inv;
+        Button sinButton = (Button)findViewById(R.id.sin_button);
+        Button cosButton = (Button)findViewById(R.id.cos_button);
+        Button tanButton = (Button)findViewById(R.id.tan_button);
+        Button lnButton = (Button)findViewById(R.id.ln_button);
+        Button logButton = (Button)findViewById(R.id.log_button);
+        Button sqrtButton = (Button)findViewById(R.id.sqrt_button);
+        if(inv) {
+            sinButton.setText("asin");
+            cosButton.setText("acos");
+            tanButton.setText("atan");
+            lnButton.setText("e"+SUPER_X);
+            logButton.setText("10"+SUPER_X);
+            sqrtButton.setText("x"+SUPER_TWO);
+        } else {
+            sinButton.setText("sin");
+            cosButton.setText("cos");
+            tanButton.setText("tan");
+            lnButton.setText("ln");
+            logButton.setText("log");
+            sqrtButton.setText(SQUAREROOT);
+        }
+    }
 
     public void addNumberToEquation(String number) {
         if(equationString.equals("0")) {

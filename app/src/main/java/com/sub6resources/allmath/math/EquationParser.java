@@ -9,9 +9,10 @@ import java.math.BigDecimal;
 public final class EquationParser {
     public static Answer Parse(String equation) {
         //Prepare string
-        equation = equation.replaceAll("×", "*");
-        equation = equation.replaceAll("÷", "/");
-        equation = equation.replaceAll("π", "PI");
+        equation = equation.replaceAll(Symbols.TIMES, "*");
+        equation = equation.replaceAll(Symbols.DIVIDE, "/");
+        equation = equation.replaceAll(Symbols.PI, "PI");
+        equation = equation.replaceAll(Symbols.SUPER_TWO, "^2");
         /*public String PLUS = "+";
         public String MINUS = "-";
         public String TIMES = "×";
