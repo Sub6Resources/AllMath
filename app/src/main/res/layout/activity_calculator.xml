@@ -30,6 +30,18 @@
             android:elevation="?attr/actionBarSize">
 
             <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="DEG"
+                android:textAllCaps="true"
+                android:textColor="@color/deg_rad_hint_color"
+                android:textSize="16sp"></TextView>
+
+            <TextView
                 android:id="@+id/outputText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,10 +63,13 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_marginLeft="21dp"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_toRightOf="@+id/textView4"
                 android:fontFamily="sans-serif-medium"
-                android:text="DEG"
+                android:text="32"
                 android:textAllCaps="true"
                 android:textColor="@color/deg_rad_hint_color"
                 android:textSize="16sp"></TextView>
@@ -74,6 +89,7 @@
                 android:textColor="?android:attr/textColorHintInverse"
                 android:textSize="40sp"
                 tools:text="Error Message" />
+
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 

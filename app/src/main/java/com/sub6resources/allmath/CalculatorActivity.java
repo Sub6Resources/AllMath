@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import com.sub6resources.allmath.math.Answer;
 import com.sub6resources.allmath.math.EquationParser;
-import com.sub6resources.allmath.math.Symbols;
 
 import static com.sub6resources.allmath.math.Symbols.DIVIDE;
 import static com.sub6resources.allmath.math.Symbols.MINUS;
@@ -25,6 +24,7 @@ public class CalculatorActivity extends AppCompatActivity {
 
 
     public boolean inv = false;
+    public int precision = 32;
 
 
     TextView output;
@@ -95,37 +95,37 @@ public class CalculatorActivity extends AppCompatActivity {
     }
     public void clickSin(View view) {
         if(!inv) {
-            addSymbolToEquation("sin(");
+            addNumberToEquation("sin(");
         } else {
-            addSymbolToEquation("asin(");
+            addNumberToEquation("asin(");
         }
     }
     public void clickCos(View view) {
         if(!inv) {
-            addSymbolToEquation("cos(");
+            addNumberToEquation("cos(");
         } else {
-            addSymbolToEquation("acos(");
+            addNumberToEquation("acos(");
         }
     }
     public void clickTan(View view) {
         if(!inv) {
-            addSymbolToEquation("tan(");
+            addNumberToEquation("tan(");
         } else {
-            addSymbolToEquation("atan(");
+            addNumberToEquation("atan(");
         }
     }
     public void clickLn(View view) {
         if(!inv) {
-            addSymbolToEquation("ln(");
+            addNumberToEquation("ln(");
         } else {
-            addSymbolToEquation("exp(");
+            addNumberToEquation("exp(");
         }
     }
     public void clickLog(View view) {
         if(!inv) {
-            addSymbolToEquation("log(");
+            addNumberToEquation("log(");
         } else {
-            addSymbolToEquation("10^");
+            addNumberToEquation("10^");
         }
     }
     public void clickExclamation(View view) {
@@ -136,11 +136,11 @@ public class CalculatorActivity extends AppCompatActivity {
     }
     public void clickE(View view) { addNumberToEquation("e");}
     public void clickUpCaret(View view) {addSymbolToEquation("^");}
-    public void clickLeftParenthesis(View view) {addSymbolToEquation("(");}
+    public void clickLeftParenthesis(View view) {addNumberToEquation("(");}
     public void clickRightParenthesis(View view) {addSymbolToEquation(")");}
     public void clickSqrt(View view) {
         if(!inv) {
-            addSymbolToEquation("sqrt(");
+            addNumberToEquation("sqrt(");
         } else {
             addSymbolToEquation(""+SUPER_TWO);
         }
@@ -293,7 +293,7 @@ public class CalculatorActivity extends AppCompatActivity {
     public void parseEquation() {
         //Parse output in new class
         Answer returnedAnswer = new Answer("");
-        returnedAnswer = EquationParser.Parse(equationString);
+        returnedAnswer = EquationParser.Parse(equationString, precision);
         answer.setText(returnedAnswer.getAnswer());
         if(returnedAnswer.getError() != null) {
             answer.setText("ERROR: "+returnedAnswer.getErrorString());
